@@ -58,9 +58,19 @@ Directory Structure
     └── ...
 
 
+TODOs
+-----
+
+- [ ] learn tmux and then add tmux configuration
+- [ ] check, which vim config I want to add
+- [ ] check, which git config I want to add
+
+
 References & Sources
 --------------------
 
 * [Christian's Dotfiles](https://github.com/ctrabold/dotfiles)
 * [Powerlevel9k Prompt](https://github.com/Powerlevel9k/powerlevel9k/wiki/Stylizing-Your-Prompt)
 * [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle)
+* [Some Mac Setup Resources](https://sourabhbajaj.com/mac-setup/iTerm/zsh.html)
+* [Prezto - Instantly Awesome ZSH](https://github.com/sorin-ionescu/prezto)
