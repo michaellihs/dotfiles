@@ -3,6 +3,18 @@ My Dotfiles
 
 This repository contains the configuration of my workstation. It is inspired by the [Christian's Dotfiles repository on GitHub](https://github.com/ctrabold/dotfiles) and I mainly kicked out things that I either don't use at the moment or didn't understand :)
 
+**This setup currently only works on Mac!!!**
+
+
+What does it bring?
+-------------------
+
+* zsh config
+* [hstr](https://github.com/dvorka/hstr) history search
+* [Powerlevel9k Prompt](https://github.com/Powerlevel9k/powerlevel9k)
+* [rcm](https://thoughtbot.github.io/rcm/) dotfiles manager
+* my default CLI apps and some other apps (e.g. VirtualBox, Vagrant, Docker...) check the [Brewfile](Brewfile)
+
 
 Prerequisites
 -------------
@@ -74,3 +86,5 @@ References & Sources
 * [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle)
 * [Some Mac Setup Resources](https://sourabhbajaj.com/mac-setup/iTerm/zsh.html)
 * [Prezto - Instantly Awesome ZSH](https://github.com/sorin-ionescu/prezto)
+* [ZAW](https://blog.patshead.com/2013/04/more-powerful-zsh-history-search-using-zaw.html)
+* [hstr for better history search](https://github.com/dvorka/hstr)
