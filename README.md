@@ -28,6 +28,13 @@ Although I intended to automate as many things as possible, there are a few step
    
   This will take a while, since all apps managed by homebrew will be installed
 
+* install the following zsh plugins:
+
+   ```bash
+   ZSH_CUSTOM='~/dotfiles/zsh'
+   git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting 
+   ```
 
 Usage
 -----
@@ -88,3 +95,5 @@ References & Sources
 * [Prezto - Instantly Awesome ZSH](https://github.com/sorin-ionescu/prezto)
 * [ZAW](https://blog.patshead.com/2013/04/more-powerful-zsh-history-search-using-zaw.html)
 * [hstr for better history search](https://github.com/dvorka/hstr)
+* [zsh autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+* [jazz up your zsh terminal](https://www.freecodecamp.org/news/jazz-up-your-zsh-terminal-in-seven-steps-a-visual-guide-e81a8fd59a38/)
