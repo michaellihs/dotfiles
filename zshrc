@@ -56,3 +56,9 @@ POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/mimi/.sdkman"
 [[ -s "/Users/mimi/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/mimi/.sdkman/bin/sdkman-init.sh"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+function iterm2_print_user_vars() {
+  iterm2_set_user_var badge $badge
+}
