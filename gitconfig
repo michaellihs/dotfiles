@@ -1,0 +1,14 @@
+[user]
+	name = Michael Lihs
+	email = michael.lihs@thoughtworks.com
+[core]
+	excludesfile = /Users/mimi/.gitignore_global
+	commentchar = \\
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[include]
+	path = .gitconfig_project

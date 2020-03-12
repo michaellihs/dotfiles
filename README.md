@@ -14,6 +14,7 @@ What does it bring?
 * [Powerlevel9k Prompt](https://github.com/Powerlevel9k/powerlevel9k)
 * [rcm](https://thoughtbot.github.io/rcm/) dotfiles manager
 * my default CLI apps and some other apps (e.g. VirtualBox, Vagrant, Docker...) check the [Brewfile](Brewfile)
+* shell completion for `do` scripts
 
 
 Prerequisites
