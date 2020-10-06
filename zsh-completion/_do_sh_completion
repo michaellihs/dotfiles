@@ -1,0 +1,16 @@
+#compdef do.sh
+
+local -a subcmds
+subcmds=()
+
+if [ -f "./do.sh" ]
+then
+  local normal=$(echo "\x0f")
+  local options=$(./do.sh help | sed 's/^Usage: \.\/do//g' | sed 's/^usage//g' | sed -E "s/[[:cntrl:]]\[[0-9;]{0,8}m//g" | tr -d ${normal} | tr '|' "\n")
+  while read -r line; do
+    subcmds+=$(echo "$line" | cut -d' ' -f1)
+  done <<< "$options"
+fi
+
+
+_describe 'command' subcmds

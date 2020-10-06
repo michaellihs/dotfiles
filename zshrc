@@ -33,6 +33,12 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+fpath=(~/.zsh-completion $fpath)
+autoload -Uz compinit && compinit -i
+
+autoload -U +X bashcompinit && bashcompinit
+source /usr/local/etc/bash_completion.d/az
+
 # User configuration
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
@@ -52,6 +58,8 @@ POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 [[ -f $HOME/.travis/travis.sh ]] && source $HOME/.travis/travis.sh
 [[ -f $HOME/.iterm2_shell_integration.zsh ]] && source $HOME/.iterm2_shell_integration.zsh
 [[ -f $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
+
+export GOSS_PATH=/usr/local/bin/goss
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/mimi/.sdkman"
