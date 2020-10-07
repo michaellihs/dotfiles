@@ -5,7 +5,8 @@ alias mkdir='mkdir -p'
 alias ping='ping -a'
 alias tree='tree -A -a'
 # should be exec $SHELL -l but doesn't work in jetbrains...
-alias reloadzsh='source ~/.zshrc'
+#alias reloadzsh='source ~/.zshrc'
+alias reloadzsh='exec zsh'
 alias ws='cd ~/workspace'
 alias mdxlocal=~/workspace/swf/mdxcli/target/darwin_amd64/mdx
 alias restart-sound='sudo pkill coreaudiod'
