@@ -17,3 +17,6 @@
 	templatedir = /Users/mimi/.git-template
 [gpg]
 	program = gpg
+[commit]
+	template = /Users/mimi/.stCommitMsg
+

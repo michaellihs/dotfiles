@@ -18,6 +18,8 @@ alias glance='glances --enable-process-extended --process-short-name --hide-kern
 alias update-talisman='curl --silent  https://raw.githubusercontent.com/thoughtworks/talisman/master/global_install_scripts/update_talisman.bash > /tmp/update_talisman.bash && /bin/bash /tmp/update_talisman.bash'
 alias uuidgen="uuidgen | tr '[:upper:]' '[:lower:]'"
 alias doo='./do.sh'
+alias blog='ws && cd ultra-cycling.de'
+alias presentations='ws && cd github/presentations'
 
 # Git
 alias gl='git l'
@@ -41,7 +43,6 @@ function kubectlgetall {
     kubectl -n ${1} get --ignore-not-found ${i}
   done
 }
-
 
 
 # Include custom aliases

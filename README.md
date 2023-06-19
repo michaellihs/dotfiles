@@ -17,6 +17,24 @@ What does it bring?
 * shell completion for `do` scripts
 
 
+Directory Structure
+-------------------
+
+    .
+    ├── .zshrc -> /Users/mimi/dotfiles/zshrc
+    ├── .rcrc -> /Users/mimi/dotfiles/rcrc
+    ├── .zshrc.local                          # local modifications, not to be submitted to dotfiles
+    ├── dotfiles
+    │   ├── iterm
+    │   │   └── ... 
+    │   ├── zsh
+    │   │   └── ... 
+    │   ├── ...
+    │   ├── rcrc
+    │   └── zshrc
+    └── ...
+
+
 Prerequisites
 -------------
 
@@ -44,6 +62,8 @@ Usage
 
    ```chsh -s $(which zsh)```
 
+   > depending on your `zsh` installation path, you might wanna have to add the output of `which zsh` to `/etc/shells`
+
 * Clone `dotfiles` repo to your `HOME` folder 
 
    ```
@@ -60,22 +80,14 @@ Usage
    ```rcup -v -t darwin```
 
 
-Directory Structure
--------------------
+`sudo` with touch id
+--------------------
 
-    .
-    ├── .zshrc -> /Users/mimi/dotfiles/zshrc
-    ├── .rcrc -> /Users/mimi/dotfiles/rcrc
-    ├── .zshrc.local                          # local modifications, not to be submitted to dotfiles
-    ├── dotfiles
-    │   ├── iterm
-    │   │   └── ... 
-    │   ├── zsh
-    │   │   └── ... 
-    │   ├── ...
-    │   ├── rcrc
-    │   └── zshrc
-    └── ...
+To allow for touch id authentication when `sudo`-ing in your terminal, add the following line to the top of `/etc/pam.d/sudo`:
+
+```
+auth       sufficient     pam_tid.so
+```
 
 
 TODOs
