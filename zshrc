@@ -56,7 +56,6 @@ fpath=(~/.zsh-completion $fpath)
 autoload -Uz compinit && compinit -i
 
 autoload -U +X bashcompinit && bashcompinit
-source /usr/local/etc/bash_completion.d/az
 
 # User configuration
 export LANG=en_US.UTF-8
@@ -68,7 +67,7 @@ export VIM_APP_DIR='/usr/bin/vim'
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
 
-source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
+source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user dir vcs)
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 
