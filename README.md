@@ -1,7 +1,7 @@
 My Dotfiles
 ===========
 
-This repository contains the configuration of my workstation. It is inspired by the [Christian's Dotfiles repository on GitHub](https://github.com/ctrabold/dotfiles) and I mainly kicked out things that I either don't use at the moment or didn't understand :)
+This repository contains the configuration of my workstation. It is inspired by [Christian's Dotfiles repository on GitHub](https://github.com/ctrabold/dotfiles) and I mainly kicked out things that I either don't use at the moment or didn't understand :)
 
 **This setup currently only works on Mac!!!**
 
@@ -11,7 +11,7 @@ What does it bring?
 
 * zsh config
 * [hstr](https://github.com/dvorka/hstr) history search
-* [Powerlevel9k Prompt](https://github.com/Powerlevel9k/powerlevel9k)
+* ~[Powerlevel9k Prompt](https://github.com/Powerlevel9k/powerlevel9k)~ [Powerlevel10k prompt](https://github.com/romkatv/powerlevel10k)
 * [rcm](https://thoughtbot.github.io/rcm/) dotfiles manager
 * my default CLI apps and some other apps (e.g. VirtualBox, Vagrant, Docker...) check the [Brewfile](Brewfile)
 * shell completion for `do` scripts
@@ -71,13 +71,15 @@ Usage
    ln -s $HOME/dotfiles/rcrc $HOME/.rcrc
    ```
 
-* We use [rcm](https://thoughtbot.github.io/rcm/) to manage our dotfiles, therefore, first check whether the changes to be made are ok via
+* I use [rcm](https://thoughtbot.github.io/rcm/) to manage our dotfiles, therefore, first check whether the dotfiles it would link to your home directory are ok via
 
    ```lsrc```
    
-  afterwards install the dotfiles via
+* afterwards link the dotfiles via
   
    ```rcup -v -t darwin```
+
+  > what this command does is basically creating a symlink from all the files and folders in this repo inside your home directory. That allows you to version control your dotfiles outside of the home dir.
 
 
 `sudo` with touch id
