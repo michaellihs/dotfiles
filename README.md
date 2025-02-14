@@ -93,10 +93,7 @@ auth       sufficient     pam_tid.so
 TODOs
 -----
 
-- [ ] learn tmux and then add tmux configuration
-- [ ] check, which vim config I want to add
-- [ ] check, which git config I want to add
-- [ ] update powerlevel9k to https://github.com/romkatv/powerlevel10k
+- [x] update powerlevel9k to https://github.com/romkatv/powerlevel10k
 
 
 References & Sources
