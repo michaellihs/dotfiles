@@ -87,6 +87,6 @@ export SDKMAN_DIR="/Users/mimi/.sdkman"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-function iterm2_print_user_vars() {
-  iterm2_set_user_var badge $badge
-}
+eval "$(direnv hook zsh)"
+
+. "$HOME/.cargo/env"

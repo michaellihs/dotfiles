@@ -1,7 +1,7 @@
 [user]
 	name = Michael Lihs
 	email = michael.lihs@thoughtworks.com
-	signingkey = B5025DE9E6BF818B
+	signingkey = /Users/mimi/.ssh/id_ed25519.pub
 [core]
 	excludesfile = /Users/mimi/.gitignore_global
 	commentchar = ' 
@@ -17,6 +17,10 @@
 	templatedir = /Users/mimi/.git-template
 [gpg]
 	program = gpg
+	format = ssh
 [commit]
 	template = /Users/mimi/.stCommitMsg
+	gpgsign = true
 
+[gpg "ssh"]
+	allowedSignersFile = ~/.config/git/allowed_signers

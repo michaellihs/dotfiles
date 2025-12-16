@@ -91,6 +91,11 @@ To allow for touch id authentication when `sudo`-ing in your terminal, add the f
 auth       sufficient     pam_tid.so
 ```
 
+Additional tools
+----------------
+
+- [git-mob](https://github.com/rkotze/git-mob/tree/master/packages/git-mob#install)
+
 
 TODOs
 -----
