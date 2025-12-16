@@ -67,7 +67,7 @@ export VIM_APP_DIR='/usr/bin/vim'
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
 
-source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
+source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user dir vcs)
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 
