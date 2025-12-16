@@ -23,7 +23,7 @@ plugins=(
   brew
   extract
   git
-  osx
+  macos
   pip
   python
   sublime
@@ -31,7 +31,6 @@ plugins=(
   zsh-autosuggestions
   docker
   kubectl
-  osx
 )
 
 ### Fix slowness of pastes with zsh-syntax-highlighting.zsh

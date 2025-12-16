@@ -26,7 +26,7 @@ alias oplogin='eval $(op signin Thoughtworks)'
 # Git
 alias gl='git l'
 alias gap='git add -p'
-gpr (){
+function gpr (){
   git pull -r origin $(git rev-parse --abbrev-ref HEAD)
 }
 
