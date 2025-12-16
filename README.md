@@ -51,6 +51,7 @@ Although I intended to automate as many things as possible, there are a few step
 
    ```bash
    ZSH_CUSTOM='~/dotfiles/zsh'
+   mkdir $ZSH_CUSTOM/plugins
    git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting 
    ```
@@ -89,6 +90,15 @@ To allow for touch id authentication when `sudo`-ing in your terminal, add the f
 
 ```
 auth       sufficient     pam_tid.so
+```
+
+Configure powerlevel10k
+-----------------------
+
+After installing powerlevel10k, run the following command to configure fonts:
+
+```shell
+p10k configure
 ```
 
 Additional tools
