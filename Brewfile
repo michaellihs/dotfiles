@@ -70,7 +70,6 @@ brew "powerlevel10k"
 brew "pyenv"
 brew "python@3.10"
 brew "python@3.11"
-brew "python@3.9", link: false
 brew "qemu"
 brew "qt"
 brew "rcm"
