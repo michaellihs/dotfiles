@@ -41,9 +41,24 @@ Prerequisites
 Although I intended to automate as many things as possible, there are a few steps you have to run manually:
 
 * Install [Homebrew](https://github.com/Homebrew/homebrew/wiki/Installation)
-* From the root of this repository, run
+* follow the instructions from the install script to add `brew` to your path
+* Install `git` via homebrew
 
-   ```brew bundle```
+   ```shell
+   brew install git
+   ```
+
+* clone this repo into `~/dotfiles``
+
+   ```shell
+   cd && git clone https://github.com/michaellihs/dotfiles
+   ```
+
+* To install all binaries managed via `bew`, run the following command from this repo's root
+
+   ```shell
+   brew bundle --file Brewfile
+   ```
    
   This will take a while, since all apps managed by homebrew will be installed
 
