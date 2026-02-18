@@ -120,7 +120,7 @@ Configure iterm
 ---------------
 
 * The color scheme I use for iterm is available in `iterm/` in the root of this repo.
-* Additionally you have to install the [Meslo fonts](https://github.com/andreberg/Meslo-Font/tree/master/dist/v1.2.1) to be used in iterm
+* Additionally you have to install the [MesloLGS NF fonts](https://github.com/romkatv/dotfiles-public/blob/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Regular.ttf) to be used in iterm
 
 Additional tools
 ----------------
