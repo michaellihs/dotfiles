@@ -97,6 +97,8 @@ Usage
 
   > what this command does is basically creating a symlink from all the files and folders in this repo inside your home directory. That allows you to version control your dotfiles outside of the home dir.
 
+* install oh-my-zsh, following their [install instructions](https://ohmyz.sh/#install)
+
 
 `sudo` with touch id
 --------------------
