@@ -65,10 +65,10 @@ Although I intended to automate as many things as possible, there are a few step
 * install the following zsh plugins:
 
    ```bash
-   ZSH_CUSTOM='~/dotfiles/zsh'
+   ZSH_CUSTOM= "$HOME/dotfiles/zsh"
    mkdir $ZSH_CUSTOM/plugins
    git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
-   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting 
+   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ZSH_CUSTOM/plugins/zsh-syntax-highlighting 
    ```
 
 Usage
