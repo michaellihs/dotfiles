@@ -13,14 +13,10 @@
 	trustExitCode = true
 [include]
 	path = .gitconfig_project
-[init]
-	templatedir = /Users/mimi/.git-template
 [gpg]
 	program = gpg
 	format = ssh
 [commit]
-	template = /Users/mimi/.stCommitMsg
 	gpgsign = true
-
 [gpg "ssh"]
 	allowedSignersFile = ~/.config/git/allowed_signers
